@@ -2,9 +2,10 @@ package pilhaDinamica;
 
 public class Node {
 	int elemento;
-	Node proximo;
+	Node proximo;	
 	
 	public Node(int elemento) {
 	this.elemento = elemento;
 	}
+	
 }

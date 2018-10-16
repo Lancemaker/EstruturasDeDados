@@ -50,4 +50,11 @@ public class PilhaDinamica {
 		return -1;
 	}
 	
+	public int top() {
+		if(!isEmpty()) {
+			return topo.elemento;//simplesmente retorna o atributo elemento do node apontado pelo topo.
+		}
+		return -1;
+	}
+	
 }
