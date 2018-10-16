@@ -10,6 +10,8 @@ public class Pilha{
 	private int arranjo[];
 	private int topo;
 	
+	//construtor gera o arranjo com base no tamanho passado como parametro.
+	//seta o topo como -1;
 	public Pilha(int tamanho) {
 		arranjo = new int[tamanho];
 		topo = -1;
