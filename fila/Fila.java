@@ -56,7 +56,8 @@ public class Fila {
 	
 	public int front() {
 		if(!isEmpty()) {
-			return fila[inicio]; //se nao estiver vazio, mostra o primeiro elemento da fila.
+			return fila[inicio]; //se nao estiver vazio, mostra 
+								 //o primeiro elemento da fila.
 		}
 		return-1; // se estiver vazio retorna -1.
 	}	
