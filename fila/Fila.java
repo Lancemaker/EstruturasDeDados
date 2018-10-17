@@ -31,10 +31,28 @@ public class Fila {
 			fim++;  	// se nao estiver lotado fim aponta pro proximo indice
 			fila[fim] = elemento; // preenche a fila no indice fim com o valor do elemento.
 			if(inicio == -1) { // se o inicio for igual a -1.
-				inicio++;
+				inicio++;	//soma +1 ao inicio.  
 			}
-			quantidade++;
+			quantidade++; //incrementa a quantidade.
 		}
 	}
+	
+	public int dequeue() {
+		if(!isEmpty()) {
+			int retorno = fila[inicio];
+			for(int i=0; i <fim; i++) {
+				fila[i]=fila[i+1];
+			}
+			fim--;
+			if(fim==-1) {
+				inicio--;
+			}
+			quantidade--;
+			return retorno;
+		}
+		return -1;
+	}
+	
+	
 	
 }
